@@ -1,0 +1,54 @@
+<!doctype html>
+<meta charset="UTF-8"/>
+   <head>
+      <title>rdf</title>
+   </head>
+<body>
+   <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Organization">
+    Nazwa zespołu :  <span property="v:name"> Passenger</span>
+    dane kontaktowe/adresowe :
+     <div rel="v:address">
+      <div typeof="v:Address">
+        <span property="v:street-address">Brighton and Hove</span>
+        <span property="v:locality">London</span>
+        <span property="v:country-name">England</span>
+     </div>
+    </div>
+    <a href="http://passengermusic.com/" rel="v:url">passenger web page</a>
+</div>
+
+
+Członkowie zespołu :
+<div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Person">
+
+  Nazywam się <span property="v:name">Michael David Rosenberg</span>,
+
+  Pracuję jako <span property="v:title">wokalista</span>
+
+  w zespole <span property="v:org">Passenger</span>.
+
+</div>
+<div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Person">
+
+  Nazywam się <span property="v:name">Derek McMillan</span>,
+  ale znajomi mowia na mnie <span property="v:nickname"> Derek </span>
+
+  Pracuję jako <span property="v:title">wokalista wspierający</span>
+
+  w zespole <span property="v:org">Passenger</span>.
+</div>
+
+
+<div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Event">
+  <a href="http://www.songkick.com/festivals/151651-byron-bay-bluesfest/id/19751884-byron-bay-bluesfest-2014" rel="v:url">
+    <span property="v:summary">Byron Bay Bluesfest 2014</span>
+  </a>
+  <img rel="v:photo" src="http://musicblog.vh1.com/wp-content/uploads/2013/08/passenger-track-by-track.jpg" />
+  Termin:
+  <span property="v:startDate" content="2014-05-17T19:00+02:00">17 maj </span>
+ <span property="v:endDate" content="2014-05-21T22:00+02:00">17 maj </span>
+</div>
+
+
+</body>
+</html>
